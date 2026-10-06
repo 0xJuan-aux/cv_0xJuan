@@ -59,4 +59,80 @@ body {
 }
 .chip:hover { transform: translateY(-3px); border-color: var(--accent); }
 .empty-state { color: var(--muted); padding: 1.25rem; border: 1px dashed rgba(255,255,255,.15); border-radius: 16px; }
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 1.4rem;
+  margin-top: 2.5rem;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: linear-gradient(var(--accent), rgba(139,92,246,.35));
+}
+.timeline-item {
+  position: relative;
+  padding-left: 42px;
+}
+.timeline-marker {
+  position: absolute;
+  left: 3px;
+  top: 24px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 6px rgba(110,168,254,.12);
+}
+.timeline-card {
+  padding: 1.35rem 1.45rem;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,.08);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.timeline-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(110,168,254,.55);
+  box-shadow: 0 18px 40px rgba(0,0,0,.22);
+}
+.timeline-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.timeline h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.company {
+  margin: .15rem 0 0;
+  color: var(--text);
+  font-weight: 600;
+}
+.period,
+.location,
+.job-skills {
+  margin: .35rem 0 0;
+  color: var(--muted);
+}
+.job-skills {
+  margin-top: .8rem;
+  color: #c9d7f5;
+}
+.work-mode {
+  flex: 0 0 auto;
+  padding: .35rem .7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.1);
+  color: var(--muted);
+  font-size: .78rem;
+}
+
 footer { padding: 2rem 0; color: var(--muted); border-top: 1px solid rgba(255,255,255,.08); }
