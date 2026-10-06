@@ -1,0 +1,23 @@
+{
+  "profile": {
+    "name": "Juan de Dios",
+    "title": "Analista de Business Intelligence y Datos",
+    "summary": [
+      "Analista de Business Intelligence y Datos con experiencia en el diseño, desarrollo y automatización de soluciones orientadas a la toma de decisiones. Especializado en procesos ETL, administración y optimización de bases de datos SQL Server, automatización mediante Python y Power Automate, y desarrollo de indicadores estratégicos utilizando Power BI y Excel.",
+      "Experiencia en la integración de múltiples fuentes de información, incluyendo bases de datos, archivos, servicios web, formularios, FTP y plataformas en la nube; así como en la construcción de modelos de datos y procesos escalables para análisis empresarial.",
+      "Perfil orientado a la mejora continua, optimización de tiempos, automatización de procesos y desarrollo de soluciones de datos que apoyen directamente a las áreas de negocio."
+    ]
+  },
+  "skills": [
+    "SQL Server",
+    "Power BI",
+    "Python",
+    "Power Automate",
+    "ETL",
+    "Excel"
+  ],
+  "experience": [],
+  "education": [],
+  "certifications": [],
+  "projects": []
+}
