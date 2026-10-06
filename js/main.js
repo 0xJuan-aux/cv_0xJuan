@@ -23,6 +23,46 @@ async function loadCV() {
       item.textContent = skill;
       skills.appendChild(item);
     });
+
+    const experience = document.getElementById('experience-list');
+    experience.innerHTML = '';
+
+    if (!(cv.experience ?? []).length) {
+      experience.className = 'timeline empty-state';
+      experience.textContent = 'Información en actualización.';
+    } else {
+      experience.className = 'timeline';
+
+      cv.experience.forEach(job => {
+        const card = document.createElement('article');
+        card.className = 'timeline-item';
+
+        const skillText = [
+          ...(job.skills ?? []),
+          job.additional_skills_count
+            ? `+${job.additional_skills_count} aptitudes adicionales`
+            : null
+        ].filter(Boolean).join(' · ');
+
+        card.innerHTML = `
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3>${job.role ?? ''}</h3>
+                <p class="company">${job.company ?? ''} · ${job.employment_type ?? ''}</p>
+              </div>
+              <span class="work-mode">${job.work_mode ?? ''}</span>
+            </div>
+            <p class="period">${job.start ?? ''} - ${job.end ?? ''} · ${job.duration ?? ''}</p>
+            <p class="location">${job.location ?? ''}</p>
+            ${skillText ? `<p class="job-skills">${skillText}</p>` : ''}
+          </div>
+        `;
+
+        experience.appendChild(card);
+      });
+    }
   } catch (error) {
     console.error(error);
   }
