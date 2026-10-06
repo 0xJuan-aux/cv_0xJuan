@@ -16,7 +16,38 @@
     "ETL",
     "Excel"
   ],
-  "experience": [],
+  "experience": [
+    {
+      "role": "Analista BI",
+      "company": "Conecta Retail",
+      "employment_type": "Jornada completa",
+      "start": "may. 2025",
+      "end": "actualidad",
+      "duration": "1 año 1 mes",
+      "location": "Lima, Perú",
+      "work_mode": "Presencial",
+      "skills": [
+        "SQL Server",
+        "Microsoft Power BI"
+      ],
+      "additional_skills_count": 7
+    },
+    {
+      "role": "Asistente Business Intelligence",
+      "company": "QAPAQ",
+      "employment_type": "Jornada completa",
+      "start": "dic. 2022",
+      "end": "may. 2025",
+      "duration": "2 años 6 meses",
+      "location": "Lima, Perú",
+      "work_mode": "Presencial",
+      "skills": [
+        "Microsoft Power Automate",
+        "SQL Server"
+      ],
+      "additional_skills_count": 8
+    }
+  ],
   "education": [],
   "certifications": [],
   "projects": []
