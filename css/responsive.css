@@ -1,0 +1,5 @@
+@media (max-width: 720px) {
+  .hero { min-height: 64vh; }
+  .section { padding: 4rem 0; }
+  .hero h2 { font-size: 1.15rem; }
+}
