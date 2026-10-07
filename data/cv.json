@@ -36,7 +36,10 @@
       "end": "actualidad",
       "location": "Lima, Perú",
       "work_mode": "Presencial",
-      "skills": ["SQL Server", "Microsoft Power BI"],
+      "skills": [
+        "SQL Server",
+        "Microsoft Power BI"
+      ],
       "responsibilities": []
     },
     {
@@ -47,7 +50,10 @@
       "end": "may. 2025",
       "location": "Lima, Perú",
       "work_mode": "Presencial",
-      "skills": ["Microsoft Power Automate", "SQL Server"],
+      "skills": [
+        "Microsoft Power Automate",
+        "SQL Server"
+      ],
       "responsibilities": []
     },
     {
@@ -62,7 +68,14 @@
         "Creación de reportes y KPIs en Excel y Power BI.",
         "Monitoreo del servidor SQL Server y mantenimiento."
       ],
-      "skills": ["SQL Server", "Python", "Power Automate", "Outlook", "Power BI", "Excel"]
+      "skills": [
+        "SQL Server",
+        "Python",
+        "Power Automate",
+        "Outlook",
+        "Power BI",
+        "Excel"
+      ]
     },
     {
       "role": "Asistente de Base de Datos",
@@ -78,7 +91,14 @@
         "Programación y presentación de reportes con Excel avanzado.",
         "Diseño con Photoshop e Illustrator."
       ],
-      "skills": ["SQL Server", "MySQL", "ASP.NET", "Visual Basic .NET", "PHP", "Excel"]
+      "skills": [
+        "SQL Server",
+        "MySQL",
+        "ASP.NET",
+        "Visual Basic .NET",
+        "PHP",
+        "Excel"
+      ]
     },
     {
       "role": "Asesor Call Center",
@@ -123,5 +143,38 @@
     "Trabajo bajo presión"
   ],
   "certifications": [],
-  "projects": []
+  "projects": [
+    {
+      "title": "Business Intelligence",
+      "description": "Procesos de integración, transformación, modelado y análisis de información para apoyar decisiones operativas y estratégicas."
+    },
+    {
+      "title": "Automatización",
+      "description": "Automatización de tareas y procesos mediante SQL Server, Python, Power Automate y herramientas de integración."
+    },
+    {
+      "title": "Datos & ETL",
+      "description": "Normalización, carga, optimización y mantenimiento de procesos de datos para escenarios operativos y analíticos."
+    },
+    {
+      "title": "Sistema de Desarrollo y Experimentación",
+      "description": "Entorno técnico para probar, registrar, simular y validar nuevas soluciones antes de incorporarlas a procesos productivos."
+    },
+    {
+      "title": "Arquitectura de Datos Producción & BI",
+      "description": "Diseño de estructuras de bases de datos separando operación, procesos, seguridad, control y analítica para soportar producción y Business Intelligence."
+    },
+    {
+      "title": "Plataforma de Cobranzas",
+      "description": "Plataforma para integrar asignaciones, gestiones, estrategias, canales y procesos de cobranza dentro de una arquitectura centralizada."
+    },
+    {
+      "title": "Plataforma Digital WhatsApp",
+      "description": "Plataforma de atención digital con gestión de perfiles, sesiones, monitoreo, listener en tiempo real y automatización de mensajería por WhatsApp."
+    },
+    {
+      "title": "Plataforma de Créditos",
+      "description": "Digitalización de formularios, verificaciones, seguimiento y flujos operativos de créditos mediante aplicaciones web, APIs y bases de datos."
+    }
+  ]
 }
