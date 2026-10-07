@@ -13,8 +13,8 @@ async function loadCV() {
     if (!response.ok) throw new Error('No se pudo cargar data/cv.json');
     const cv = await response.json();
 
-    document.getElementById('profile-name').textContent = cv.profile?.name ?? '';
-    document.getElementById('profile-title').textContent = cv.profile?.title ?? '';
+    const firstName = document.getElementById('profile-first-name');
+    if (firstName) firstName.textContent = (cv.profile?.name ?? 'Juan de Dios').replace(/\s+Castro.*$/i, '');
 
     const summary = document.getElementById('profile-summary');
     summary.innerHTML = '';
@@ -24,69 +24,53 @@ async function loadCV() {
       summary.appendChild(p);
     });
 
-    const skills = document.getElementById('skills-list');
-    skills.innerHTML = '';
-    (cv.skills ?? []).forEach(skill => {
-      const item = document.createElement('span');
-      item.className = 'chip';
-      item.textContent = skill;
-      skills.appendChild(item);
-    });
-
     const experience = document.getElementById('experience-list');
     experience.innerHTML = '';
     (cv.experience ?? []).forEach(job => {
-      const card = document.createElement('article');
-      card.className = 'timeline-item';
-
-      const skillText = (job.skills ?? []).join(' · ');
+      const item = document.createElement('article');
+      item.className = 'experience-item';
       const responsibilities = (job.responsibilities ?? []).length
-        ? `<ul class="job-responsibilities">${job.responsibilities.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
-        : '';
-
-      card.innerHTML = `
-        <div class="timeline-marker" aria-hidden="true"></div>
-        <div class="timeline-card">
-          <div class="timeline-head">
-            <div>
-              <h3>${escapeHtml(job.role)}</h3>
-              <p class="company">${escapeHtml(job.company)}${job.employment_type ? ' · ' + escapeHtml(job.employment_type) : ''}</p>
-            </div>
-            ${job.work_mode ? `<span class="work-mode">${escapeHtml(job.work_mode)}</span>` : ''}
-          </div>
+        ? `<ul>${job.responsibilities.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ul>`
+        : '<p class="location">Experiencia en Business Intelligence y análisis de datos.</p>';
+      item.innerHTML = `
+        <div>
+          <h3>${escapeHtml(job.role)}</h3>
+          <p class="company">${escapeHtml(job.company)}</p>
           <p class="period">${escapeHtml(job.start)} - ${escapeHtml(job.end)}</p>
           ${job.location ? `<p class="location">${escapeHtml(job.location)}</p>` : ''}
+        </div>
+        <div class="job-details">
           ${responsibilities}
-          ${skillText ? `<p class="job-skills">${escapeHtml(skillText)}</p>` : ''}
+          ${(job.skills ?? []).length ? `<p class="job-skills">${job.skills.map(escapeHtml).join(' · ')}</p>` : ''}
         </div>
       `;
+      experience.appendChild(item);
+    });
 
-      experience.appendChild(card);
+    const skills = document.getElementById('skills-list');
+    skills.innerHTML = '';
+    (cv.skills ?? []).forEach(skill => {
+      const span = document.createElement('span');
+      span.className = 'skill';
+      span.textContent = skill;
+      skills.appendChild(span);
     });
 
     const education = document.getElementById('education-list');
     education.innerHTML = '';
-    (cv.education ?? []).forEach(item => {
-      const card = document.createElement('article');
-      card.className = 'timeline-item';
-      card.innerHTML = `
-        <div class="timeline-marker" aria-hidden="true"></div>
-        <div class="timeline-card">
-          <h3>${escapeHtml(item.level)}</h3>
-          <p class="company">${escapeHtml(item.institution)}</p>
-          <p class="period">${escapeHtml(item.start)}${item.end ? ' - ' + escapeHtml(item.end) : ''}</p>
+    (cv.education ?? []).forEach(ed => {
+      const item = document.createElement('article');
+      item.className = 'education-item';
+      item.innerHTML = `
+        <div>
+          <h3>${escapeHtml(ed.level)}</h3>
+          <p class="company">${escapeHtml(ed.institution)}</p>
+        </div>
+        <div>
+          <p class="period">${escapeHtml(ed.start)}${ed.end ? ' - ' + escapeHtml(ed.end) : ''}</p>
         </div>
       `;
-      education.appendChild(card);
-    });
-
-    const extras = document.getElementById('extras-list');
-    extras.innerHTML = '';
-    [...(cv.soft_skills ?? []), ...(cv.languages ?? []).map(x => `${x.language}: ${x.level}`)].forEach(text => {
-      const item = document.createElement('span');
-      item.className = 'chip';
-      item.textContent = text;
-      extras.appendChild(item);
+      education.appendChild(item);
     });
   } catch (error) {
     console.error(error);
@@ -101,7 +85,7 @@ function activateRevealEffects() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.14 });
+  }, { threshold: 0.12 });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
