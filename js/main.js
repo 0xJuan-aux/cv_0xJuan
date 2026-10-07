@@ -47,6 +47,19 @@ async function loadCV() {
       experience.appendChild(item);
     });
 
+    const projects = document.getElementById('projects-list');
+    projects.innerHTML = '';
+    (cv.projects ?? []).forEach((project, index) => {
+      const card = document.createElement('article');
+      card.className = 'project-card';
+      card.innerHTML = `
+        <span class="project-index">${String(index + 1).padStart(2, '0')}</span>
+        <h3>${escapeHtml(project.title)}</h3>
+        <p>${escapeHtml(project.description)}</p>
+      `;
+      projects.appendChild(card);
+    });
+
     const skills = document.getElementById('skills-list');
     skills.innerHTML = '';
     (cv.skills ?? []).forEach(skill => {
