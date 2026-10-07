@@ -1,5 +1,44 @@
 @media (max-width: 720px) {
-  .hero { min-height: 64vh; }
-  .section { padding: 4rem 0; }
-  .hero h2 { font-size: 1.15rem; }
+  body {
+    padding: 0;
+    background: #fff;
+  }
+
+  body > header,
+  body > main,
+  body > footer {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero {
+    padding: 42px 0 26px;
+  }
+
+  .hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 28px 0;
+  }
+
+  .timeline-head {
+    display: block;
+  }
+
+  .work-mode {
+    display: inline-block;
+    margin-top: .45rem;
+  }
 }
