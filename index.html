@@ -3,67 +3,111 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Curriculum Vitae profesional - Business Intelligence, Datos y Automatización">
-  <title>Juan de Dios Castro Nuñez | Business Intelligence & Data</title>
+  <meta name="description" content="Juan de Dios Castro Nuñez - Business Intelligence, Datos y Automatización">
+  <title>Juan de Dios | Business Intelligence & Data</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container reveal">
-      <p class="eyebrow">Curriculum Vitae</p>
-      <h1 id="profile-name">Juan de Dios Castro Nuñez</h1>
-      <h2 id="profile-title">Business Intelligence | Data & Automation</h2>
-      <a href="#about" class="btn">Conocer perfil</a>
-    </div>
-  </header>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Inicio">JD<span>.</span></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+      </nav>
+      <button class="print-btn" type="button" onclick="window.print()">Guardar CV en PDF</button>
+    </header>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container reveal">
-        <p class="eyebrow">Perfil profesional</p>
-        <h2>Acerca de</h2>
-        <div id="profile-summary" class="summary"></div>
-      </div>
-    </section>
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-copy reveal">
+          <p class="kicker">Business Intelligence · Datos · Automatización</p>
+          <h1>
+            <span id="profile-first-name">Juan de Dios</span>
+            <strong>Datos que se<br>convierten en<br>acción.</strong>
+          </h1>
+          <p class="lead">Analista BI, administrador de bases de datos y desarrollador ETL. Diseño soluciones que conectan la información con las necesidades del negocio.</p>
+          <p class="meta">Lima, Perú · SQL Server · Power BI · Python</p>
+          <a class="primary-btn" href="#proyectos">Explorar proyectos</a>
+        </div>
 
-    <section id="skills" class="section section-alt">
-      <div class="container reveal">
-        <p class="eyebrow">Stack</p>
-        <h2>Tecnologías y especialidades</h2>
-        <div id="skills-list" class="chips"></div>
-      </div>
-    </section>
+        <aside class="specialty-card reveal" aria-label="Especialidad">
+          <p class="card-kicker">Mi especialidad</p>
+          <h2>Del origen del dato<br>a la decisión.</h2>
+          <div class="years">6+</div>
+          <p class="years-copy">Años de experiencia en BI,<br>bases de datos y procesos ETL.</p>
+          <div class="card-rule"></div>
+          <p class="card-foot">Integración de datos / Modelado analítico<br>Automatización / Desarrollo de aplicaciones</p>
+        </aside>
+      </section>
 
-    <section id="experience" class="section">
-      <div class="container reveal">
-        <p class="eyebrow">Trayectoria</p>
-        <h2>Experiencia profesional</h2>
-        <div id="experience-list" class="timeline"></div>
-      </div>
-    </section>
+      <section id="perfil" class="editorial-section reveal">
+        <div class="section-label">
+          <span>01 / Perfil</span>
+          <h2>Una visión<br>orientada a datos.</h2>
+        </div>
+        <div id="profile-summary" class="section-content prose"></div>
+      </section>
 
-    <section id="education" class="section section-alt">
-      <div class="container reveal">
-        <p class="eyebrow">Formación</p>
-        <h2>Educación</h2>
-        <div id="education-list" class="timeline"></div>
-      </div>
-    </section>
+      <section id="experiencia" class="editorial-section reveal">
+        <div class="section-label">
+          <span>02 / Experiencia</span>
+          <h2>Trayectoria<br>profesional.</h2>
+        </div>
+        <div id="experience-list" class="section-content experience-grid"></div>
+      </section>
 
-    <section id="extras" class="section">
-      <div class="container reveal">
-        <p class="eyebrow">Perfil</p>
-        <h2>Idiomas y habilidades</h2>
-        <div id="extras-list" class="chips"></div>
-      </div>
-    </section>
-  </main>
+      <section id="proyectos" class="editorial-section reveal">
+        <div class="section-label">
+          <span>03 / Proyectos</span>
+          <h2>Soluciones que<br>generan valor.</h2>
+        </div>
+        <div class="section-content projects-grid">
+          <article class="project-card">
+            <span class="project-index">01</span>
+            <h3>Business Intelligence</h3>
+            <p>Procesos de integración, transformación, modelado y análisis de información para apoyar decisiones operativas y estratégicas.</p>
+          </article>
+          <article class="project-card">
+            <span class="project-index">02</span>
+            <h3>Automatización</h3>
+            <p>Automatización de tareas y procesos mediante SQL Server, Python, Power Automate y herramientas de integración.</p>
+          </article>
+          <article class="project-card">
+            <span class="project-index">03</span>
+            <h3>Datos & ETL</h3>
+            <p>Normalización, carga, optimización y mantenimiento de procesos de datos orientados a escenarios operativos y analíticos.</p>
+          </article>
+        </div>
+      </section>
 
-  <footer>
-    <div class="container">CV profesional · <span id="year"></span></div>
-  </footer>
+      <section id="habilidades" class="editorial-section reveal">
+        <div class="section-label">
+          <span>04 / Habilidades</span>
+          <h2>Stack técnico.</h2>
+        </div>
+        <div class="section-content">
+          <div id="skills-list" class="skills-list"></div>
+        </div>
+      </section>
+
+      <section id="educacion" class="editorial-section reveal">
+        <div class="section-label">
+          <span>05 / Formación</span>
+          <h2>Educación.</h2>
+        </div>
+        <div id="education-list" class="section-content education-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Juan de Dios Castro Nuñez</span>
+      <span>CV profesional · <span id="year"></span></span>
+    </footer>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
