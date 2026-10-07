@@ -1,11 +1,11 @@
 {
   "profile": {
-    "name": "Juan de Dios",
-    "title": "Analista de Business Intelligence y Datos",
+    "name": "Juan de Dios Castro Nuñez",
+    "title": "Business Intelligence | Data & Automation",
     "summary": [
-      "Analista de Business Intelligence y Datos con experiencia en el diseño, desarrollo y automatización de soluciones orientadas a la toma de decisiones. Especializado en procesos ETL, administración y optimización de bases de datos SQL Server, automatización mediante Python y Power Automate, y desarrollo de indicadores estratégicos utilizando Power BI y Excel.",
-      "Experiencia en la integración de múltiples fuentes de información, incluyendo bases de datos, archivos, servicios web, formularios, FTP y plataformas en la nube; así como en la construcción de modelos de datos y procesos escalables para análisis empresarial.",
-      "Perfil orientado a la mejora continua, optimización de tiempos, automatización de procesos y desarrollo de soluciones de datos que apoyen directamente a las áreas de negocio."
+      "Analista de Business Intelligence y Administrador de Bases de Datos con más de 6 años de experiencia en gestión, optimización y automatización de sistemas de información.",
+      "Especializado en SQL Server, Power BI y automatización de procesos, con experiencia en normalización de bases, procesos de carga, optimización de Stored Procedures y Jobs, generación de KPIs y monitoreo de SQL Server.",
+      "Perfil orientado a convertir procesos manuales y grandes volúmenes de información en soluciones automatizadas, controlables y útiles para la toma de decisiones."
     ]
   },
   "skills": [
@@ -14,7 +14,14 @@
     "Python",
     "Power Automate",
     "ETL",
-    "Excel"
+    "Excel avanzado",
+    "MySQL",
+    "ASP.NET",
+    "Visual Basic .NET",
+    "PHP",
+    "HTML",
+    "CSS",
+    "Microsoft Access"
   ],
   "experience": [
     {
@@ -23,14 +30,10 @@
       "employment_type": "Jornada completa",
       "start": "may. 2025",
       "end": "actualidad",
-      "duration": "1 año 1 mes",
       "location": "Lima, Perú",
       "work_mode": "Presencial",
-      "skills": [
-        "SQL Server",
-        "Microsoft Power BI"
-      ],
-      "additional_skills_count": 7
+      "skills": ["SQL Server", "Microsoft Power BI"],
+      "responsibilities": []
     },
     {
       "role": "Asistente Business Intelligence",
@@ -38,17 +41,79 @@
       "employment_type": "Jornada completa",
       "start": "dic. 2022",
       "end": "may. 2025",
-      "duration": "2 años 6 meses",
       "location": "Lima, Perú",
       "work_mode": "Presencial",
-      "skills": [
-        "Microsoft Power Automate",
-        "SQL Server"
+      "skills": ["Microsoft Power Automate", "SQL Server"],
+      "responsibilities": []
+    },
+    {
+      "role": "Analista BI / Operaciones",
+      "company": "Recsa",
+      "start": "jul. 2019",
+      "end": "jul. 2025",
+      "responsibilities": [
+        "Normalización de bases y creación de procesos para la carga de información.",
+        "Automatización de tareas con SQL Server, Python, Power Automate, Outlook y Power BI.",
+        "Optimización de Stored Procedures y Jobs.",
+        "Creación de reportes y KPIs en Excel y Power BI.",
+        "Monitoreo y mantenimiento de SQL Server."
       ],
-      "additional_skills_count": 8
+      "skills": ["SQL Server", "Python", "Power Automate", "Power BI", "Excel"]
+    },
+    {
+      "role": "Asistente de Base de Datos",
+      "company": "Estudio Jurídico Romero y Asociados",
+      "start": "nov. 2016",
+      "end": "jul. 2017",
+      "responsibilities": [
+        "Análisis y trabajo con bases de datos SQL Server y MySQL.",
+        "Programación con ASP.NET, Visual Basic y PHP.",
+        "Elaboración y presentación de reportes con Excel avanzado."
+      ],
+      "skills": ["SQL Server", "MySQL", "ASP.NET", "Visual Basic .NET", "PHP", "Excel"]
+    },
+    {
+      "role": "Asesor Call Center",
+      "company": "Atento",
+      "start": "jul. 2013",
+      "end": "ago. 2015",
+      "responsibilities": [
+        "Atención al cliente.",
+        "Soporte técnico para el servicio Speedy."
+      ],
+      "skills": []
     }
   ],
-  "education": [],
+  "education": [
+    {
+      "level": "Universitario",
+      "institution": "Universidad Tecnológica del Perú - UTP",
+      "start": "feb. 2023",
+      "end": "actualmente en curso"
+    },
+    {
+      "level": "Técnico",
+      "institution": "IDAT",
+      "start": "jun. 2016",
+      "end": "ago. 2018"
+    },
+    {
+      "level": "Especialización - SQL Base de Datos",
+      "institution": "Cibertec",
+      "start": "feb. 2015",
+      "end": ""
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "level": "Nativo"
+    }
+  ],
+  "soft_skills": [
+    "Trabajo en equipo",
+    "Trabajo bajo presión"
+  ],
   "certifications": [],
   "projects": []
 }
