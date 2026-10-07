@@ -1,11 +1,10 @@
 {
   "profile": {
     "name": "Juan de Dios Castro Nuñez",
-    "title": "Business Intelligence | Data & Automation",
+    "title": "Analista BI / Operaciones",
     "summary": [
-      "Analista de Business Intelligence y Administrador de Bases de Datos con más de 6 años de experiencia en gestión, optimización y automatización de sistemas de información.",
-      "Especializado en SQL Server, Power BI y automatización de procesos, con experiencia en normalización de bases, procesos de carga, optimización de Stored Procedures y Jobs, generación de KPIs y monitoreo de SQL Server.",
-      "Perfil orientado a convertir procesos manuales y grandes volúmenes de información en soluciones automatizadas, controlables y útiles para la toma de decisiones."
+      "Analista BI y Administrador de Bases de Datos con más de 6 años de experiencia en gestión, optimización y automatización de sistemas de información.",
+      "Especializado en SQL Server, Power BI y automatización de procesos, con enfoque en la toma de decisiones basadas en datos."
     ]
   },
   "skills": [
@@ -13,15 +12,20 @@
     "Power BI",
     "Python",
     "Power Automate",
-    "ETL",
+    "Outlook",
     "Excel avanzado",
     "MySQL",
     "ASP.NET",
     "Visual Basic .NET",
     "PHP",
+    "Java",
     "HTML",
     "CSS",
-    "Microsoft Access"
+    "Microsoft Access",
+    "Microsoft Word",
+    "Microsoft PowerPoint",
+    "Azure Web",
+    "Automatización de procesos de negocio"
   ],
   "experience": [
     {
@@ -52,13 +56,13 @@
       "start": "jul. 2019",
       "end": "jul. 2025",
       "responsibilities": [
-        "Normalización de bases y creación de procesos para la carga de información.",
-        "Automatización de tareas con SQL Server, Python, Power Automate, Outlook y Power BI.",
+        "Normalización de bases y creación de procesos para la carga.",
+        "Automatización de tareas aplicando SQL Server, Python, Power Automate, Outlook y Power BI.",
         "Optimización de Stored Procedures y Jobs.",
         "Creación de reportes y KPIs en Excel y Power BI.",
-        "Monitoreo y mantenimiento de SQL Server."
+        "Monitoreo del servidor SQL Server y mantenimiento."
       ],
-      "skills": ["SQL Server", "Python", "Power Automate", "Power BI", "Excel"]
+      "skills": ["SQL Server", "Python", "Power Automate", "Outlook", "Power BI", "Excel"]
     },
     {
       "role": "Asistente de Base de Datos",
@@ -66,9 +70,13 @@
       "start": "nov. 2016",
       "end": "jul. 2017",
       "responsibilities": [
-        "Análisis y trabajo con bases de datos SQL Server y MySQL.",
-        "Programación con ASP.NET, Visual Basic y PHP.",
-        "Elaboración y presentación de reportes con Excel avanzado."
+        "Análisis de bases de datos SQL Server.",
+        "Análisis de bases de datos MySQL.",
+        "Programación ASP.NET.",
+        "Programación Visual Basic.",
+        "Programación PHP.",
+        "Programación y presentación de reportes con Excel avanzado.",
+        "Diseño con Photoshop e Illustrator."
       ],
       "skills": ["SQL Server", "MySQL", "ASP.NET", "Visual Basic .NET", "PHP", "Excel"]
     },
@@ -79,7 +87,7 @@
       "end": "ago. 2015",
       "responsibilities": [
         "Atención al cliente.",
-        "Soporte técnico para el servicio Speedy."
+        "Soporte técnico para Speedy."
       ],
       "skills": []
     }
@@ -87,7 +95,7 @@
   "education": [
     {
       "level": "Universitario",
-      "institution": "Universidad Tecnológica del Perú - UTP",
+      "institution": "UTP",
       "start": "feb. 2023",
       "end": "actualmente en curso"
     },
