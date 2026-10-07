@@ -1,3 +1,12 @@
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
 async function loadCV() {
   try {
     const response = await fetch('data/cv.json', { cache: 'no-store' });
@@ -26,43 +35,59 @@ async function loadCV() {
 
     const experience = document.getElementById('experience-list');
     experience.innerHTML = '';
+    (cv.experience ?? []).forEach(job => {
+      const card = document.createElement('article');
+      card.className = 'timeline-item';
 
-    if (!(cv.experience ?? []).length) {
-      experience.className = 'timeline empty-state';
-      experience.textContent = 'Información en actualización.';
-    } else {
-      experience.className = 'timeline';
+      const skillText = (job.skills ?? []).join(' · ');
+      const responsibilities = (job.responsibilities ?? []).length
+        ? `<ul class="job-responsibilities">${job.responsibilities.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
+        : '';
 
-      cv.experience.forEach(job => {
-        const card = document.createElement('article');
-        card.className = 'timeline-item';
-
-        const skillText = [
-          ...(job.skills ?? []),
-          job.additional_skills_count
-            ? `+${job.additional_skills_count} aptitudes adicionales`
-            : null
-        ].filter(Boolean).join(' · ');
-
-        card.innerHTML = `
-          <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-card">
-            <div class="timeline-head">
-              <div>
-                <h3>${job.role ?? ''}</h3>
-                <p class="company">${job.company ?? ''} · ${job.employment_type ?? ''}</p>
-              </div>
-              <span class="work-mode">${job.work_mode ?? ''}</span>
+      card.innerHTML = `
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <div>
+              <h3>${escapeHtml(job.role)}</h3>
+              <p class="company">${escapeHtml(job.company)}${job.employment_type ? ' · ' + escapeHtml(job.employment_type) : ''}</p>
             </div>
-            <p class="period">${job.start ?? ''} - ${job.end ?? ''} · ${job.duration ?? ''}</p>
-            <p class="location">${job.location ?? ''}</p>
-            ${skillText ? `<p class="job-skills">${skillText}</p>` : ''}
+            ${job.work_mode ? `<span class="work-mode">${escapeHtml(job.work_mode)}</span>` : ''}
           </div>
-        `;
+          <p class="period">${escapeHtml(job.start)} - ${escapeHtml(job.end)}</p>
+          ${job.location ? `<p class="location">${escapeHtml(job.location)}</p>` : ''}
+          ${responsibilities}
+          ${skillText ? `<p class="job-skills">${escapeHtml(skillText)}</p>` : ''}
+        </div>
+      `;
 
-        experience.appendChild(card);
-      });
-    }
+      experience.appendChild(card);
+    });
+
+    const education = document.getElementById('education-list');
+    education.innerHTML = '';
+    (cv.education ?? []).forEach(item => {
+      const card = document.createElement('article');
+      card.className = 'timeline-item';
+      card.innerHTML = `
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-card">
+          <h3>${escapeHtml(item.level)}</h3>
+          <p class="company">${escapeHtml(item.institution)}</p>
+          <p class="period">${escapeHtml(item.start)}${item.end ? ' - ' + escapeHtml(item.end) : ''}</p>
+        </div>
+      `;
+      education.appendChild(card);
+    });
+
+    const extras = document.getElementById('extras-list');
+    extras.innerHTML = '';
+    [...(cv.soft_skills ?? []), ...(cv.languages ?? []).map(x => `${x.language}: ${x.level}`)].forEach(text => {
+      const item = document.createElement('span');
+      item.className = 'chip';
+      item.textContent = text;
+      extras.appendChild(item);
+    });
   } catch (error) {
     console.error(error);
   }
