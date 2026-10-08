@@ -1,26 +1,38 @@
 {
   "profile": {
     "name": "Juan de Dios Castro Nuñez",
-    "title": "Analista BI / Operaciones",
+    "title": "Analista BI | Arquitectura de Datos, Automatización y Desarrollo de Plataformas",
     "summary": [
-      "Analista BI y Administrador de Bases de Datos con más de 6 años de experiencia en gestión, optimización y automatización de sistemas de información.",
-      "Especializado en SQL Server, Power BI y automatización de procesos, con enfoque en la toma de decisiones basadas en datos."
+      "Profesional de Business Intelligence y bases de datos con más de 6 años de experiencia en SQL Server, integración de datos, procesos ETL, optimización y automatización de operaciones.",
+      "Diseño soluciones que integran ASP.NET Core (.NET 10), Python, SQL Server, APIs y Power BI, con arquitecturas modulares que separan las operaciones, la seguridad, los procesos y la analítica.",
+      "Desarrollo y evoluciono AtencionDigital, un ecosistema de soluciones para Cobranzas, Créditos y Atención Digital, incorporando monitoreo, automatización, experimentación y despliegues versionados.",
+      "En analítica priorizo el procesamiento y modelado de datos desde el origen para trabajar con grandes volúmenes y simplificar los cálculos y visualizaciones en Power BI."
     ]
   },
   "skills": [
-    "SQL Server",
+    "SQL Server y T-SQL",
+    "Arquitectura y modelado de datos",
+    "Business Intelligence (BI)",
     "Power BI",
+    "ETL e integración de datos",
+    "Modelado analítico de alto volumen",
     "Python",
+    "ASP.NET Core / .NET 10",
+    "APIs REST / JSON",
+    "Oracle Database",
+    "Selenium / Chrome DevTools Protocol",
+    "Git y GitHub",
+    "GitHub Actions",
+    "IIS y despliegue web",
+    "PowerShell",
     "Power Automate",
+    "Excel avanzado / VBA",
+    "HTML5 / CSS3 / JavaScript",
     "Outlook",
-    "Excel avanzado",
     "MySQL",
-    "ASP.NET",
     "Visual Basic .NET",
     "PHP",
     "Java",
-    "HTML",
-    "CSS",
     "Microsoft Access",
     "Microsoft Word",
     "Microsoft PowerPoint",
@@ -38,9 +50,21 @@
       "work_mode": "Presencial",
       "skills": [
         "SQL Server",
-        "Microsoft Power BI"
+        "Power BI",
+        "Python",
+        "ASP.NET Core / .NET",
+        "ETL",
+        "Automatización de procesos",
+        "APIs"
       ],
-      "responsibilities": []
+      "responsibilities": [
+        "Diseño y evolución de AtencionDigital, una plataforma web modular para procesos de Cobranzas, Créditos y Atención Digital, desarrollada con ASP.NET Core, Python y SQL Server.",
+        "Diseño de modelos y estructuras de datos diferenciadas para operación, seguridad, procesos, control y análisis de información.",
+        "Desarrollo de procesos ETL, homologación de fuentes y automatizaciones con SQL Server, Python, Oracle y herramientas de integración.",
+        "Desarrollo e integración de formularios web, flujos de seguimiento, validaciones, reportes y servicios API para procesos operativos.",
+        "Implementación y pruebas de sistemas de monitoreo, automatización web, administración de sesiones WhatsApp y despliegues controlados con GitHub e IIS.",
+        "Modelado analítico orientado a grandes volúmenes de información y optimización del procesamiento previo a la visualización en Power BI."
+      ]
     },
     {
       "role": "Asistente Business Intelligence",
@@ -145,36 +169,48 @@
   "certifications": [],
   "projects": [
     {
-      "title": "Business Intelligence",
-      "description": "Procesos de integración, transformación, modelado y análisis de información para apoyar decisiones operativas y estratégicas."
+      "title": "AtencionDigital | Plataforma empresarial modular",
+      "description": "Diseño y desarrollo de un ecosistema en ASP.NET Core (.NET 10), SQL Server y Python que integra módulos de Cobranzas, Créditos y Atención Digital, con separación de responsabilidades, control de versiones y publicación en IIS."
     },
     {
-      "title": "Automatización",
-      "description": "Automatización de tareas y procesos mediante SQL Server, Python, Power Automate y herramientas de integración."
+      "title": "Arquitectura de Datos | Operación, Procesos y BI",
+      "description": "Diseño de bases y esquemas especializados para seguridad, catálogos, operación, control, integración y analítica; normalización, trazabilidad y separación de cargas transaccionales y analíticas."
     },
     {
-      "title": "Datos & ETL",
-      "description": "Normalización, carga, optimización y mantenimiento de procesos de datos para escenarios operativos y analíticos."
-    },
-    {
-      "title": "Sistema de Desarrollo y Experimentación",
-      "description": "Entorno técnico para probar, registrar, simular y validar nuevas soluciones antes de incorporarlas a procesos productivos."
-    },
-    {
-      "title": "Arquitectura de Datos Producción & BI",
-      "description": "Diseño de estructuras de bases de datos separando operación, procesos, seguridad, control y analítica para soportar producción y Business Intelligence."
+      "title": "Business Intelligence | Analítica de gran volumen",
+      "description": "Experiencia en tratamiento de conjuntos históricos de hasta 40 millones de registros en 12 meses. Diseño de modelos precalculados y banderas binarias para simplificar medidas, reducir dependencia de DAX complejo y acelerar la exploración analítica."
     },
     {
       "title": "Plataforma de Cobranzas",
-      "description": "Plataforma para integrar asignaciones, gestiones, estrategias, canales y procesos de cobranza dentro de una arquitectura centralizada."
-    },
-    {
-      "title": "Plataforma Digital WhatsApp",
-      "description": "Plataforma de atención digital con gestión de perfiles, sesiones, monitoreo, listener en tiempo real y automatización de mensajería por WhatsApp."
+      "description": "Integración y homologación de asignaciones, gestiones y campañas multicanal (contact center, campo y canales digitales); automatización de cargas SQL/Oracle, reglas de clasificación y preparación de información para seguimiento operativo y BI."
     },
     {
       "title": "Plataforma de Créditos",
-      "description": "Digitalización de formularios, verificaciones, seguimiento y flujos operativos de créditos mediante aplicaciones web, APIs y bases de datos."
+      "description": "Digitalización de verificaciones y formularios de evaluación y sinceramiento, con validaciones, carga de documentos, seguimiento de estados, reportes e integración con APIs y Power Automate."
+    },
+    {
+      "title": "Plataforma Digital WhatsApp",
+      "description": "Desarrollo de un entorno de atención digital con gestión de perfiles y sesiones, listener en tiempo real, monitoreo de procesos y control del navegador. La automatización de envíos continúa en desarrollo y validación."
+    },
+    {
+      "title": "Emulador multiproveedor | Laboratorio de automatización",
+      "description": "Motor experimental independiente basado en Selenium y Chrome DevTools Protocol para navegar sitios, capturar DOM y eventos de red, grabar acciones, simular/reproducir flujos y comparar diagnósticos entre versiones."
+    },
+    {
+      "title": "EVA | Extracción y procesamiento automatizado",
+      "description": "Automatización de extracción web y procesamiento de archivos XLSX de estructura variable, con ejecuciones intradía y consolidadas, validación de datos y almacenamiento temporal en SQL Server para su posterior integración."
+    },
+    {
+      "title": "Integración y automatización de procesos ETL",
+      "description": "Diseño de procedimientos almacenados, procesos Python, integraciones Oracle/SQL Server y flujos con Power Automate; ejecución programada, validación y monitoreo de cargas operativas."
+    },
+    {
+      "title": "ATD-Relay | Consultas SQL de solo lectura",
+      "description": "Diseño de un canal técnico aislado para consultas informativas SQL de solo lectura, con comunicación HTTPS/WSS y resultados JSON estructurados. Solución orientada a asistencia técnica interna, no a servicios públicos de escritura."
+    },
+    {
+      "title": "Despliegue y control de cambios",
+      "description": "Versionado en GitHub, automatización mediante scripts y tareas programadas, pruebas funcionales, documentación técnica y despliegues de aplicaciones ASP.NET Core en IIS."
     }
   ]
 }
