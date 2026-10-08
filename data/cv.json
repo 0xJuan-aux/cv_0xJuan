@@ -1,12 +1,13 @@
 {
   "profile": {
     "name": "Juan de Dios Castro Nuñez",
-    "title": "Analista BI | Arquitectura de Datos, Automatización y Desarrollo de Plataformas",
+    "title": "Analista BI y de Datos | Arquitectura de Datos | DBA | Automatización",
     "summary": [
-      "Profesional de Business Intelligence y bases de datos con más de 6 años de experiencia en SQL Server, integración de datos, procesos ETL, optimización y automatización de operaciones.",
-      "Diseño soluciones que integran ASP.NET Core (.NET 10), Python, SQL Server, APIs y Power BI, con arquitecturas modulares que separan las operaciones, la seguridad, los procesos y la analítica.",
-      "Desarrollo y evoluciono AtencionDigital, un ecosistema de soluciones para Cobranzas, Créditos y Atención Digital, incorporando monitoreo, automatización, experimentación y despliegues versionados.",
-      "En analítica priorizo el procesamiento y modelado de datos desde el origen para trabajar con grandes volúmenes y simplificar los cálculos y visualizaciones en Power BI."
+      "Profesional de Business Intelligence, análisis y arquitectura de datos con más de 6 años de experiencia, ejerciendo funciones de analista BI, analista de datos, arquitecto de datos y administrador de bases de datos (DBA).",
+      "Experiencia construyendo y administrando el ciclo de vida completo de la información: recepción multifuente, validación, depuración, normalización, procesos ETL, diseño de Data Warehouses y Data Marts, almacenamiento histórico y generación de resultados operativos y analíticos.",
+      "Diseño de ambientes SQL Server, estructuras de tablas y procesos automatizados para integrar fuentes como FTP, páginas web, correo, Microsoft Teams, WhatsApp, carpetas compartidas y otras bases SQL. Distribución de reportes y entregables mediante correo, FTP, Teams y WhatsApp, con orquestación basada en SQL Server Agent, Python y Power Automate.",
+      "Administración de roles, permisos, seguridad y estabilidad de las bases de datos; diseño de históricos y KPIs para Power BI, priorizando la eficiencia del modelo de datos y el procesamiento en origen.",
+      "Actualmente amplío esta experiencia con AtencionDigital, un ecosistema modular en ASP.NET Core (.NET 10), SQL Server y Python para procesos de Cobranzas, Créditos y Atención Digital, con monitoreo, experimentación y despliegues versionados."
     ]
   },
   "skills": [
@@ -37,7 +38,17 @@
     "Microsoft Word",
     "Microsoft PowerPoint",
     "Azure Web",
-    "Automatización de procesos de negocio"
+    "Automatización de procesos de negocio",
+    "Administración SQL Server (DBA)",
+    "Seguridad SQL: usuarios, roles y permisos",
+    "SQL Server Agent",
+    "Data Warehouse / Data Marts",
+    "Integración de fuentes multicanal",
+    "Diseño end-to-end de plataformas de datos",
+    "Distribución automatizada de reportes",
+    "Orquestación de bots y procesos",
+    "Microsoft Teams y automatizaciones",
+    "FTP / FTPS"
   ],
   "experience": [
     {
@@ -201,8 +212,8 @@
       "description": "Automatización de extracción web y procesamiento de archivos XLSX de estructura variable, con ejecuciones intradía y consolidadas, validación de datos y almacenamiento temporal en SQL Server para su posterior integración."
     },
     {
-      "title": "Integración y automatización de procesos ETL",
-      "description": "Diseño de procedimientos almacenados, procesos Python, integraciones Oracle/SQL Server y flujos con Power Automate; ejecución programada, validación y monitoreo de cargas operativas."
+      "title": "Ciclo integral de datos | Arquitectura end-to-end",
+      "description": "Diseño y administración de flujos completos desde la ingesta multifuente (FTP, sitios web, correo, Teams, WhatsApp, carpetas y SQL) hasta la depuración, normalización, Data Warehouse/Data Marts, históricos y explotación BI. Entrega automática de reportes por correo, FTP, Teams y WhatsApp mediante SQL Server Agent, Python y Power Automate; gestión de accesos, permisos y estabilidad de SQL Server."
     },
     {
       "title": "ATD-Relay | Consultas SQL de solo lectura",
