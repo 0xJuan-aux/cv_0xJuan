@@ -52,99 +52,114 @@
   ],
   "experience": [
     {
-      "role": "Analista BI",
-      "company": "Conecta Retail",
-      "employment_type": "Jornada completa",
-      "start": "may. 2025",
+      "role": "Analista Crédito y Cobranza",
+      "company": "Grupo Carsa",
+      "employment_type": "Jornada parcial",
+      "start": "mar. 2026",
       "end": "actualidad",
-      "location": "Lima, Perú",
-      "work_mode": "Presencial",
+      "location": "Santiago de Surco, Perú",
+      "work_mode": "Híbrido",
+      "responsibilities": [
+        "Diseño, estructuración y normalización de bases de datos para consolidar información de los procesos de Créditos y Cobranzas, orientada al análisis y al uso operativo.",
+        "Desarrollo, mantenimiento y mejora de procesos ETL para integrar, depurar y transformar información procedente de distintas fuentes empresariales.",
+        "Automatización de procesos recurrentes y flujos de información mediante SQL Server, Python, Power Automate y procedimientos almacenados.",
+        "Optimización de consultas T-SQL, Stored Procedures y tareas programadas con SQL Server Agent, procurando mejorar tiempos de ejecución y continuidad operativa.",
+        "Diseño e implementación de modelos de datos orientados a Business Intelligence, reportes operativos y análisis histórico.",
+        "Elaboración de indicadores de gestión y KPIs en Power BI y Microsoft Excel para apoyar el seguimiento de Créditos y Cobranzas.",
+        "Administración, monitoreo y mantenimiento de entornos SQL Server; revisión de ejecuciones y seguimiento de incidencias de procesos de datos.",
+        "Desarrollo de bots para extracción automatizada de información desde fuentes internas y externas e integración entre aplicaciones y plataformas empresariales.",
+        "Desarrollo y evolución de iniciativas digitales para formularios, verificaciones, seguimiento operativo e integración de información, con enfoque en automatización y trazabilidad."
+      ],
       "skills": [
         "SQL Server",
-        "Power BI",
+        "T-SQL",
         "Python",
-        "ASP.NET Core / .NET",
+        "Power Automate",
+        "SQL Server Agent",
         "ETL",
-        "Automatización de procesos",
-        "APIs"
-      ],
-      "responsibilities": [
-        "Diseño y evolución de AtencionDigital, una plataforma web modular para procesos de Cobranzas, Créditos y Atención Digital, desarrollada con ASP.NET Core, Python y SQL Server.",
-        "Diseño de modelos y estructuras de datos diferenciadas para operación, seguridad, procesos, control y análisis de información.",
-        "Desarrollo de procesos ETL, homologación de fuentes y automatizaciones con SQL Server, Python, Oracle y herramientas de integración.",
-        "Desarrollo e integración de formularios web, flujos de seguimiento, validaciones, reportes y servicios API para procesos operativos.",
-        "Implementación y pruebas de sistemas de monitoreo, automatización web, administración de sesiones WhatsApp y despliegues controlados con GitHub e IIS.",
-        "Modelado analítico orientado a grandes volúmenes de información y optimización del procesamiento previo a la visualización en Power BI."
+        "Modelado de datos",
+        "Power BI",
+        "Microsoft Excel",
+        "Automatización de bots"
       ]
     },
     {
-      "role": "Asistente Business Intelligence",
-      "company": "QAPAQ",
-      "employment_type": "Jornada completa",
-      "start": "dic. 2022",
-      "end": "may. 2025",
-      "location": "Lima, Perú",
-      "work_mode": "Presencial",
-      "skills": [
-        "Microsoft Power Automate",
-        "SQL Server"
-      ],
-      "responsibilities": []
-    },
-    {
-      "role": "Analista BI / Operaciones",
-      "company": "Recsa",
-      "start": "jul. 2019",
+      "role": "Administrador de Base de Datos",
+      "company": "Recsa Perú",
+      "employment_type": "Jornada parcial",
+      "start": "sept. 2019",
       "end": "jul. 2025",
+      "location": "Lima, Perú",
       "responsibilities": [
-        "Normalización de bases y creación de procesos para la carga.",
-        "Automatización de tareas aplicando SQL Server, Python, Power Automate, Outlook y Power BI.",
-        "Optimización de Stored Procedures y Jobs.",
-        "Creación de reportes y KPIs en Excel y Power BI.",
-        "Monitoreo del servidor SQL Server y mantenimiento."
+        "Administración de bases de datos SQL Server, velando por la integridad, disponibilidad y confidencialidad de la información.",
+        "Control y monitoreo de procesos y tareas en ejecución para identificar incidencias y reducir interrupciones en el procesamiento de datos.",
+        "Definición y aplicación de políticas de acceso; administración de usuarios, roles y permisos de bases de datos conforme a las necesidades operativas.",
+        "Administración, programación y seguimiento de Jobs de SQL Server Agent para asegurar la ejecución de cargas, actualizaciones y otras tareas recurrentes.",
+        "Revisión y optimización de consultas SQL, procedimientos almacenados y procesos automatizados para mejorar la eficiencia del entorno.",
+        "Organización de estructuras de datos y rutinas de mantenimiento que soportaban procesos operativos, históricos y analíticos."
       ],
       "skills": [
         "SQL Server",
-        "Python",
-        "Power Automate",
-        "Outlook",
+        "Administración de Bases de Datos (DBA)",
+        "Seguridad SQL",
+        "Roles y permisos",
+        "SQL Server Agent",
+        "Stored Procedures",
+        "Monitoreo"
+      ]
+    },
+    {
+      "role": "Analista de Inteligencia de Negocios",
+      "company": "Recsa Perú",
+      "employment_type": "Jornada parcial",
+      "start": "jul. 2019",
+      "end": "jul. 2025",
+      "location": "Lima, Perú",
+      "work_mode": "Híbrido",
+      "responsibilities": [
+        "Diseño de reportes e indicadores clave de desempeño (KPIs) en Microsoft Excel y Power BI para analizar resultados de negocio.",
+        "Desarrollo de gráficos estáticos, comparativos y evolutivos en Power BI para visualizar tendencias y el comportamiento histórico de indicadores.",
+        "Elaboración de modelos de scoring y análisis predictivo para apoyar la evaluación y el seguimiento de información de negocio.",
+        "Diseño de flujos y procesos automáticos para recopilar, procesar y distribuir información de manera recurrente.",
+        "Preparación, depuración y transformación de datos provenientes de diversas fuentes para generar información consistente y útil para los análisis.",
+        "Construcción y aprovechamiento de históricos y modelos analíticos que facilitan comparaciones por periodos, segmentos y resultados.",
+        "Automatización de reportes y entregables mediante herramientas de integración y programación de procesos."
+      ],
+      "skills": [
+        "Business Intelligence",
         "Power BI",
-        "Excel"
+        "Microsoft Excel",
+        "SQL Server",
+        "KPIs",
+        "Scoring",
+        "Modelos predictivos",
+        "ETL",
+        "Automatización"
       ]
     },
     {
       "role": "Asistente de Base de Datos",
-      "company": "Estudio Jurídico Romero y Asociados",
+      "company": "Estudio Jurídico Romero D & Asociados",
+      "employment_type": "Jornada completa",
       "start": "nov. 2016",
       "end": "jul. 2017",
+      "location": "Lima, Perú",
+      "work_mode": "Presencial",
       "responsibilities": [
-        "Análisis de bases de datos SQL Server.",
-        "Análisis de bases de datos MySQL.",
-        "Programación ASP.NET.",
-        "Programación Visual Basic.",
-        "Programación PHP.",
-        "Programación y presentación de reportes con Excel avanzado.",
-        "Diseño con Photoshop e Illustrator."
+        "Automatización y optimización de procedimientos almacenados (Stored Procedures) en SQL Server para apoyar las operaciones de gestión de datos.",
+        "Preparación y programación de procesos para el envío automático de bases de datos y reportes a clientes mediante FTP.",
+        "Mantenimiento, revisión, depuración y organización de datos, con énfasis en mejorar su consistencia y disponibilidad.",
+        "Apoyo en la implementación de rutinas SQL para el procesamiento, actualización y consulta de información.",
+        "Soporte a la generación de reportes y a las tareas operativas asociadas a la administración de bases de datos."
       ],
       "skills": [
         "SQL Server",
-        "MySQL",
-        "ASP.NET",
-        "Visual Basic .NET",
-        "PHP",
-        "Excel"
+        "Stored Procedures",
+        "FTP",
+        "Automatización de reportes",
+        "Depuración de datos",
+        "Mantenimiento de bases de datos"
       ]
-    },
-    {
-      "role": "Asesor Call Center",
-      "company": "Atento",
-      "start": "jul. 2013",
-      "end": "ago. 2015",
-      "responsibilities": [
-        "Atención al cliente.",
-        "Soporte técnico para Speedy."
-      ],
-      "skills": []
     }
   ],
   "education": [
@@ -222,6 +237,59 @@
     {
       "title": "Despliegue y control de cambios",
       "description": "Versionado en GitHub, automatización mediante scripts y tareas programadas, pruebas funcionales, documentación técnica y despliegues de aplicaciones ASP.NET Core en IIS."
+    }
+  ],
+  "experience_pending_validation": [
+    {
+      "role": "Analista BI",
+      "company": "Conecta Retail",
+      "employment_type": "Jornada completa",
+      "start": "may. 2025",
+      "end": "actualidad",
+      "location": "Lima, Perú",
+      "work_mode": "Presencial",
+      "skills": [
+        "SQL Server",
+        "Power BI",
+        "Python",
+        "ASP.NET Core / .NET",
+        "ETL",
+        "Automatización de procesos",
+        "APIs"
+      ],
+      "responsibilities": [
+        "Diseño y evolución de AtencionDigital, una plataforma web modular para procesos de Cobranzas, Créditos y Atención Digital, desarrollada con ASP.NET Core, Python y SQL Server.",
+        "Diseño de modelos y estructuras de datos diferenciadas para operación, seguridad, procesos, control y análisis de información.",
+        "Desarrollo de procesos ETL, homologación de fuentes y automatizaciones con SQL Server, Python, Oracle y herramientas de integración.",
+        "Desarrollo e integración de formularios web, flujos de seguimiento, validaciones, reportes y servicios API para procesos operativos.",
+        "Implementación y pruebas de sistemas de monitoreo, automatización web, administración de sesiones WhatsApp y despliegues controlados con GitHub e IIS.",
+        "Modelado analítico orientado a grandes volúmenes de información y optimización del procesamiento previo a la visualización en Power BI."
+      ]
+    },
+    {
+      "role": "Asistente Business Intelligence",
+      "company": "QAPAQ",
+      "employment_type": "Jornada completa",
+      "start": "dic. 2022",
+      "end": "may. 2025",
+      "location": "Lima, Perú",
+      "work_mode": "Presencial",
+      "skills": [
+        "Microsoft Power Automate",
+        "SQL Server"
+      ],
+      "responsibilities": []
+    },
+    {
+      "role": "Asesor Call Center",
+      "company": "Atento",
+      "start": "jul. 2013",
+      "end": "ago. 2015",
+      "responsibilities": [
+        "Atención al cliente.",
+        "Soporte técnico para Speedy."
+      ],
+      "skills": []
     }
   ]
 }
