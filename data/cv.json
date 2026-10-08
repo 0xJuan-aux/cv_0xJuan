@@ -223,10 +223,6 @@
       "description": "Motor experimental independiente basado en Selenium y Chrome DevTools Protocol para navegar sitios, capturar DOM y eventos de red, grabar acciones, simular/reproducir flujos y comparar diagnósticos entre versiones."
     },
     {
-      "title": "EVA | Extracción y procesamiento automatizado",
-      "description": "Automatización de extracción web y procesamiento de archivos XLSX de estructura variable, con ejecuciones intradía y consolidadas, validación de datos y almacenamiento temporal en SQL Server para su posterior integración."
-    },
-    {
       "title": "Ciclo integral de datos | Arquitectura end-to-end",
       "description": "Diseño y administración de flujos completos desde la ingesta multifuente (FTP, sitios web, correo, Teams, WhatsApp, carpetas y SQL) hasta la depuración, normalización, Data Warehouse/Data Marts, históricos y explotación BI. Entrega automática de reportes por correo, FTP, Teams y WhatsApp mediante SQL Server Agent, Python y Power Automate; gestión de accesos, permisos y estabilidad de SQL Server."
     },
