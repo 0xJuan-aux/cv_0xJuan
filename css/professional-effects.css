@@ -1,0 +1,309 @@
+/* Capa visual exclusivamente para el modo Profesional.
+   Respeta contenido, modo Gamer, preferencias de movimiento y la impresion. */
+body:not(.theme-gamer) {
+  --pro-navy: #173b51;
+  --pro-blue: #24749a;
+  --pro-teal: #369ca2;
+  --pro-soft: #e8f5f6;
+}
+body:not(.theme-gamer) .page-shell {
+  position: relative;
+  overflow: clip;
+  border: 1px solid rgba(58,115,139,.12);
+  box-shadow: 0 26px 85px rgba(23,64,83,.16), 0 4px 24px rgba(29,96,117,.06);
+}
+body:not(.theme-gamer) .topbar { position: relative; z-index: 3; }
+body:not(.theme-gamer) .brand {
+  position: relative;
+  transition: letter-spacing .35s ease, color .35s ease;
+}
+body:not(.theme-gamer) .brand:hover { letter-spacing: .005em; color: #246b8e; }
+body:not(.theme-gamer) .topbar::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 180px;
+  height: 2px;
+  background: linear-gradient(90deg,#296b88, #51a9af,transparent);
+  animation: pro-header-travel 12s ease-in-out infinite alternate;
+}
+@keyframes pro-header-travel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(110px); }
+}
+/* Lineas geometrizadas sobre el papel, detras de los elementos reales. */
+body:not(.theme-gamer) .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 560px;
+  border-radius: 0 0 26px 26px;
+  background:
+    radial-gradient(ellipse at 85% 32%,rgba(89,173,186,.11),transparent 51%),
+    radial-gradient(ellipse at 6% 82%,rgba(113,180,197,.07),transparent 55%);
+}
+body:not(.theme-gamer) .hero::after {
+  content: "";
+  position: absolute;
+  left: -18%;
+  bottom: -61%;
+  width: 95%;
+  height: 105%;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  border: 1px solid rgba(50,122,152,.085);
+  box-shadow: 0 0 0 28px rgba(49,125,155,.025),0 0 0 85px rgba(46,140,161,.018);
+  animation: pro-breathe 10s ease-in-out infinite alternate;
+}
+@keyframes pro-breathe {
+  from { transform: scale(.99); opacity: .5; }
+  to { transform: scale(1.08); opacity: .9; }
+}
+body:not(.theme-gamer) .hero-copy,
+body:not(.theme-gamer) .specialty-card { position: relative; z-index: 1; }
+.professional-art {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.professional-art canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: .72;
+}
+.professional-art .pro-shape {
+  position: absolute;
+  display: block;
+  border: 1px solid rgba(41,133,158,.19);
+  filter: drop-shadow(0 5px 12px rgba(27,112,134,.07));
+}
+.professional-art .pro-shape--diamond {
+  width: 126px;
+  height: 126px;
+  right: 15%;
+  top: 7%;
+  transform: rotate(28deg);
+  border-radius: 11px;
+  animation: pro-diamond-float 14s ease-in-out infinite alternate;
+}
+.professional-art .pro-shape--ring {
+  width: 225px;
+  height: 225px;
+  right: -67px;
+  bottom: 16%;
+  border-radius: 50%;
+  border: 1px dashed rgba(33,111,144,.27);
+  animation: pro-ring-rotate 36s linear infinite;
+}
+.professional-art .pro-shape--small {
+  width: 48px;
+  height: 48px;
+  top: 18%;
+  left: 46%;
+  transform: rotate(28deg);
+  border-radius: 8px;
+  border-color: rgba(57,151,171,.22);
+  animation: pro-small-drift 11s ease-in-out infinite alternate;
+}
+.professional-art .pro-paths {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  opacity: .45;
+}
+.professional-art .pro-paths path {
+  fill: none;
+  stroke: #327b99;
+  stroke-width: .95;
+  stroke-dasharray: 8 17;
+  animation: pro-route-dash 45s linear infinite;
+}
+.professional-art .pro-paths path:nth-child(2) { stroke: #55a0a7; animation-duration: 57s; }
+@keyframes pro-diamond-float {
+  from { transform: translate3d(0,0,0) rotate(27deg); }
+  to { transform: translate3d(-24px,29px,0) rotate(44deg); }
+}
+@keyframes pro-small-drift {
+  from { transform: translate3d(0,0,0) rotate(-20deg); }
+  to { transform: translate3d(25px,-22px,0) rotate(20deg); }
+}
+@keyframes pro-ring-rotate { to { transform: rotate(360deg); } }
+@keyframes pro-route-dash { to { stroke-dashoffset: -780; } }
+/* Tipografia editorial y detalles interactivos. */
+body:not(.theme-gamer) .hero h1 > span { text-wrap: balance; }
+body:not(.theme-gamer) .hero h1 strong {
+  background: linear-gradient(100deg, #174661 0%, #297c9d 52%, #359eaa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+body:not(.theme-gamer) .kicker {
+  position: relative;
+  display: inline-block;
+}
+body:not(.theme-gamer) .kicker::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: -17px;
+  top: .5em;
+  background: #3ba1ad;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 4px rgba(59,161,173,.1);
+}
+body:not(.theme-gamer) .specialty-card {
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(88,173,179,.28);
+  background: linear-gradient(145deg,#193e50,#112c3b);
+  box-shadow: 0 18px 45px rgba(19,66,87,.21);
+  transition: transform .45s ease,box-shadow .45s ease;
+}
+body:not(.theme-gamer) .specialty-card:hover {
+  transform: translate3d(0,-7px,0);
+  box-shadow: 0 26px 55px rgba(19,66,87,.26);
+}
+body:not(.theme-gamer) .specialty-card::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  right: -140px;
+  top: -150px;
+  border: 1px solid rgba(204,249,246,.25);
+  border-radius: 50%;
+  box-shadow: 0 0 0 24px rgba(199,249,249,.026),0 0 0 58px rgba(199,249,249,.02);
+  animation: pro-breathe 9s ease-in-out infinite alternate;
+}
+body:not(.theme-gamer) .specialty-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -15% 12% 30%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent,rgba(180,229,228,.27),transparent);
+  transform: rotate(-31deg);
+}
+/* Las secciones ganan una pauta grafica sin competir con el texto. */
+body:not(.theme-gamer) .editorial-section {
+  position: relative;
+  border-image: linear-gradient(90deg,rgba(32,94,122,.30),rgba(76,163,167,.15),transparent) 1;
+}
+body:not(.theme-gamer) .section-label > span { font-size: .78rem; }
+body:not(.theme-gamer) .section-label h2 { font-size: clamp(1.8rem,2.35vw,2.3rem); }
+body:not(.theme-gamer) .prose p { line-height: 1.8; }
+body:not(.theme-gamer) .primary-btn {
+  border-radius: 9px;
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s ease,box-shadow .3s ease;
+}
+body:not(.theme-gamer) .primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 23px rgba(24,77,102,.21);
+}
+/* Tarjetas con linea de barrido, microelevacion y borde de progreso. */
+body:not(.theme-gamer) .project-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 265px;
+  background: linear-gradient(150deg,rgba(255,255,255,.86),rgba(238,247,248,.79));
+  border: 1px solid rgba(37,108,139,.18);
+  border-radius: 13px;
+  box-shadow: 0 7px 23px rgba(32,89,110,.05);
+  transition: transform .34s cubic-bezier(.2,.7,.2,1),border-color .34s ease,box-shadow .34s ease;
+}
+body:not(.theme-gamer) .project-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3px;
+  width: 100%;
+  transform: scaleX(.23);
+  transform-origin: left;
+  background: linear-gradient(90deg,#235e7c,#4bb3b3);
+  transition: transform .45s ease;
+}
+body:not(.theme-gamer) .project-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: radial-gradient(320px circle at var(--pro-x,50%) var(--pro-y,40%),rgba(65,153,176,.12),transparent 68%);
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+body:not(.theme-gamer) .project-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(37,113,145,.38);
+  box-shadow: 0 20px 38px rgba(32,89,110,.11),0 4px 10px rgba(32,89,110,.06);
+}
+body:not(.theme-gamer) .project-card:hover::before { transform: scaleX(1); }
+body:not(.theme-gamer) .project-card:hover::after { opacity: 1; }
+body:not(.theme-gamer) .project-card h3 { font-size: 1.26rem;line-height: 1.37; }
+body:not(.theme-gamer) .project-card p { font-size: .99rem;line-height: 1.66; }
+body:not(.theme-gamer) .project-index { font-size: .87rem;letter-spacing: .07em; }
+body:not(.theme-gamer) .experience-item {
+  transition: background .28s ease,padding .28s ease,border-color .28s ease;
+  border-left: 2px solid transparent;
+}
+body:not(.theme-gamer) .experience-item:hover {
+  padding-left: 12px;
+  border-left-color: rgba(44,129,154,.75);
+  background: linear-gradient(90deg,rgba(67,153,169,.055),transparent 70%);
+}
+body:not(.theme-gamer) .skill {
+  border-radius: 6px;
+  transition: transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+body:not(.theme-gamer) .skill:hover {
+  transform: translateY(-3px);
+  border-color: #68aab5;
+  box-shadow: 0 7px 17px rgba(30,99,126,.08);
+}
+/* Los usuarios de pantallas pequenas reciben composicion ligera. */
+@media (max-width: 860px) {
+  body:not(.theme-gamer) .hero { min-height: 0; }
+  body:not(.theme-gamer) .hero::after { opacity: .32; }
+  body:not(.theme-gamer) .project-card { min-height: 210px; }
+  .professional-art .pro-shape--small { display: none; }
+  .professional-art canvas { opacity: .42; }
+}
+@media (max-width: 520px) {
+  body:not(.theme-gamer) .page-shell { overflow: clip; }
+  body:not(.theme-gamer) .hero { padding-left: 6px;padding-right: 6px; }
+  body:not(.theme-gamer) .hero h1 > span,
+  body:not(.theme-gamer) .hero h1 strong { font-size: clamp(2.6rem,11vw,4rem); }
+  body:not(.theme-gamer) .specialty-card { margin-right: 3px; }
+  body:not(.theme-gamer) .project-card h3 { font-size: 1.19rem; }
+  .professional-art .pro-shape--ring { width: 145px;height: 145px;right: -65px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .professional-art *,body:not(.theme-gamer) .topbar::after,
+  body:not(.theme-gamer) .hero::after,
+  body:not(.theme-gamer) .specialty-card::before {
+    animation: none !important;
+  }
+  body:not(.theme-gamer) .project-card,
+  body:not(.theme-gamer) .experience-item,
+  body:not(.theme-gamer) .skill,
+  body:not(.theme-gamer) .specialty-card { transition: none !important; }
+}
+@media print {
+  .professional-art { display: none !important; }
+  body:not(.theme-gamer) .hero { background:none !important;min-height:0;overflow:visible; }
+  body:not(.theme-gamer) .hero::after,body:not(.theme-gamer) .topbar::after { display:none !important; }
+  body:not(.theme-gamer) .project-card { box-shadow:none !important;background:#fff !important;break-inside:avoid; }
+  body:not(.theme-gamer) .project-card::before,body:not(.theme-gamer) .project-card::after { display:none !important; }
+  body:not(.theme-gamer) .page-shell { box-shadow:none !important;border:0 !important; }
+}
+body.theme-gamer .professional-art { display:none !important; }
