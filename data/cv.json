@@ -196,43 +196,63 @@
   "projects": [
     {
       "title": "AtencionDigital | Plataforma empresarial modular",
-      "description": "Diseño y desarrollo de un ecosistema en ASP.NET Core (.NET 10), SQL Server y Python que integra módulos de Cobranzas, Créditos y Atención Digital, con separación de responsabilidades, control de versiones y publicación en IIS."
+      "description": "Diseño y desarrollo de un ecosistema en ASP.NET Core (.NET 10), SQL Server y Python que integra módulos de Cobranzas, Créditos y Atención Digital, con separación de responsabilidades, control de versiones y publicación en IIS.",
+      "image": "assets/projects/01-atenciondigital.svg",
+      "image_alt": "Ilustración multicolor sobre AtencionDigital | Plataforma empresarial modular"
     },
     {
       "title": "Arquitectura de Datos | Operación, Procesos y BI",
-      "description": "Diseño de bases y esquemas especializados para seguridad, catálogos, operación, control, integración y analítica; normalización, trazabilidad y separación de cargas transaccionales y analíticas."
+      "description": "Diseño de bases y esquemas especializados para seguridad, catálogos, operación, control, integración y analítica; normalización, trazabilidad y separación de cargas transaccionales y analíticas.",
+      "image": "assets/projects/02-arquitectura-datos.svg",
+      "image_alt": "Ilustración multicolor sobre Arquitectura de Datos | Operación, Procesos y BI"
     },
     {
       "title": "Business Intelligence | Analítica de gran volumen",
-      "description": "Experiencia en tratamiento de conjuntos históricos de hasta 40 millones de registros en 12 meses. Diseño de modelos precalculados y banderas binarias para simplificar medidas, reducir dependencia de DAX complejo y acelerar la exploración analítica."
+      "description": "Experiencia en tratamiento de conjuntos históricos de hasta 40 millones de registros en 12 meses. Diseño de modelos precalculados y banderas binarias para simplificar medidas, reducir dependencia de DAX complejo y acelerar la exploración analítica.",
+      "image": "assets/projects/03-analitica-gran-volumen.svg",
+      "image_alt": "Ilustración multicolor sobre Business Intelligence | Analítica de gran volumen"
     },
     {
       "title": "Plataforma de Cobranzas",
-      "description": "Integración y homologación de asignaciones, gestiones y campañas multicanal (contact center, campo y canales digitales); automatización de cargas SQL/Oracle, reglas de clasificación y preparación de información para seguimiento operativo y BI."
+      "description": "Integración y homologación de asignaciones, gestiones y campañas multicanal (contact center, campo y canales digitales); automatización de cargas SQL/Oracle, reglas de clasificación y preparación de información para seguimiento operativo y BI.",
+      "image": "assets/projects/04-plataforma-cobranzas.svg",
+      "image_alt": "Ilustración multicolor sobre Plataforma de Cobranzas"
     },
     {
       "title": "Plataforma de Créditos",
-      "description": "Digitalización de verificaciones y formularios de evaluación y sinceramiento, con validaciones, carga de documentos, seguimiento de estados, reportes e integración con APIs y Power Automate."
+      "description": "Digitalización de verificaciones y formularios de evaluación y sinceramiento, con validaciones, carga de documentos, seguimiento de estados, reportes e integración con APIs y Power Automate.",
+      "image": "assets/projects/05-plataforma-creditos.svg",
+      "image_alt": "Ilustración multicolor sobre Plataforma de Créditos"
     },
     {
       "title": "Plataforma Digital WhatsApp",
-      "description": "Desarrollo de un entorno de atención digital con gestión de perfiles y sesiones, listener en tiempo real, monitoreo de procesos y control del navegador. La automatización de envíos continúa en desarrollo y validación."
+      "description": "Desarrollo de un entorno de atención digital con gestión de perfiles y sesiones, listener en tiempo real, monitoreo de procesos y control del navegador. La automatización de envíos continúa en desarrollo y validación.",
+      "image": "assets/projects/06-whatsapp.svg",
+      "image_alt": "Ilustración multicolor sobre Plataforma Digital WhatsApp"
     },
     {
       "title": "Emulador multiproveedor | Laboratorio de automatización",
-      "description": "Motor experimental independiente basado en Selenium y Chrome DevTools Protocol para navegar sitios, capturar DOM y eventos de red, grabar acciones, simular/reproducir flujos y comparar diagnósticos entre versiones."
+      "description": "Motor experimental independiente basado en Selenium y Chrome DevTools Protocol para navegar sitios, capturar DOM y eventos de red, grabar acciones, simular/reproducir flujos y comparar diagnósticos entre versiones.",
+      "image": "assets/projects/07-emulador-multiproveedor.svg",
+      "image_alt": "Ilustración multicolor sobre Emulador multiproveedor | Laboratorio de automatización"
     },
     {
       "title": "Ciclo integral de datos | Arquitectura end-to-end",
-      "description": "Diseño y administración de flujos completos desde la ingesta multifuente (FTP, sitios web, correo, Teams, WhatsApp, carpetas y SQL) hasta la depuración, normalización, Data Warehouse/Data Marts, históricos y explotación BI. Entrega automática de reportes por correo, FTP, Teams y WhatsApp mediante SQL Server Agent, Python y Power Automate; gestión de accesos, permisos y estabilidad de SQL Server."
+      "description": "Diseño y administración de flujos completos desde la ingesta multifuente (FTP, sitios web, correo, Teams, WhatsApp, carpetas y SQL) hasta la depuración, normalización, Data Warehouse/Data Marts, históricos y explotación BI. Entrega automática de reportes por correo, FTP, Teams y WhatsApp mediante SQL Server Agent, Python y Power Automate; gestión de accesos, permisos y estabilidad de SQL Server.",
+      "image": "assets/projects/08-ciclo-integral-datos.svg",
+      "image_alt": "Ilustración multicolor sobre Ciclo integral de datos | Arquitectura end-to-end"
     },
     {
       "title": "ATD-Relay | Consultas SQL de solo lectura",
-      "description": "Diseño de un canal técnico aislado para consultas informativas SQL de solo lectura, con comunicación HTTPS/WSS y resultados JSON estructurados. Solución orientada a asistencia técnica interna, no a servicios públicos de escritura."
+      "description": "Diseño de un canal técnico aislado para consultas informativas SQL de solo lectura, con comunicación HTTPS/WSS y resultados JSON estructurados. Solución orientada a asistencia técnica interna, no a servicios públicos de escritura.",
+      "image": "assets/projects/09-atd-relay.svg",
+      "image_alt": "Ilustración multicolor sobre ATD-Relay | Consultas SQL de solo lectura"
     },
     {
       "title": "Despliegue y control de cambios",
-      "description": "Versionado en GitHub, automatización mediante scripts y tareas programadas, pruebas funcionales, documentación técnica y despliegues de aplicaciones ASP.NET Core en IIS."
+      "description": "Versionado en GitHub, automatización mediante scripts y tareas programadas, pruebas funcionales, documentación técnica y despliegues de aplicaciones ASP.NET Core en IIS.",
+      "image": "assets/projects/10-despliegue-control.svg",
+      "image_alt": "Ilustración multicolor sobre Despliegue y control de cambios"
     }
   ],
   "experience_pending_validation": [
