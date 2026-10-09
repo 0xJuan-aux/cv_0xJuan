@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/themes.css?v=20261008">
 </head>
 <body>
   <div class="page-shell">
@@ -18,7 +19,12 @@
         <a href="#proyectos">Proyectos</a>
         <a href="#habilidades">Habilidades</a>
       </nav>
-      <button class="print-btn" type="button" onclick="window.print()">Guardar CV en PDF</button>
+      <div class="topbar-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Cambiar a modo Gamer" title="Alternar entre vista Profesional y Gamer">
+          <span aria-hidden="true">✦</span> <span id="theme-toggle-label">Modo Gamer</span>
+        </button>
+        <button class="print-btn" type="button" onclick="window.print()">Guardar CV en PDF</button>
+      </div>
     </header>
 
     <main>
@@ -94,5 +100,6 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/theme.js?v=20261008"></script>
 </body>
 </html>
