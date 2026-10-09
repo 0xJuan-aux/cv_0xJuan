@@ -1,0 +1,133 @@
+/* Galería de proyectos del CV, compatible con ambos temas. */
+.project-card { display: flex; flex-direction: column; }
+.project-card .project-index,.project-card h3,.project-card p { flex-shrink: 0; }
+.project-image-btn {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 11px 16px;
+  border-radius: 9px;
+  border: 1px solid rgba(29,109,145,.37);
+  background: linear-gradient(118deg,#e7f4fa,#d1ebf0);
+  color: #164968;
+  font-size: .95rem;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 1.3;
+  box-shadow: 0 4px 13px rgba(12,80,106,.09);
+  transition: transform .22s ease,background .22s ease,box-shadow .22s ease;
+}
+.project-image-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(118deg,#ccecf5,#b8e3e9);
+  box-shadow: 0 10px 22px rgba(19,91,119,.17);
+}
+.project-image-btn:focus-visible { outline: 3px solid #1681ba;outline-offset: 3px; }
+.project-card p { margin-bottom: 18px; }
+body.theme-gamer .project-image-btn {
+  background: linear-gradient(110deg,#ffd44d,#ff892a 54%,#ff57a9);
+  color:#210e13;
+  border-color: rgba(255,168,66,.75);
+  box-shadow: 0 5px 21px rgba(255,107,35,.2);
+}
+body.theme-gamer .project-image-btn:hover {
+  background: linear-gradient(110deg,#ffe07c,#ffa140 50%,#ff79c8);
+  box-shadow: 0 9px 28px rgba(255,102,45,.3);
+}
+/* Dialog modal: botones y navegación siempre contrastan en ambos temas. */
+.project-lightbox {
+  width: min(1110px,calc(100vw - 28px));
+  max-width: 1110px;
+  max-height: calc(100dvh - 34px);
+  padding: 0;
+  margin: auto;
+  border: 1px solid rgba(140,182,201,.3);
+  border-radius: 16px;
+  background: #f9fdff;
+  color: #132d42;
+  box-shadow: 0 35px 100px rgba(0,16,37,.42);
+  overflow: auto;
+}
+.project-lightbox::backdrop { background: rgba(4,13,23,.84);backdrop-filter:blur(7px); }
+.project-lightbox-head {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 20px;
+  background: #f9fdff;
+  border-bottom: 1px solid #dcebf2;
+}
+.project-lightbox-title {
+  margin: 0;
+  font-size: clamp(1rem,2vw,1.3rem);
+  line-height: 1.3;
+  font-weight: 800;
+  color: #163d57;
+}
+.project-lightbox-close {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #b7d1de;
+  background: #e7f3f7;
+  color: #19445d;
+  font-size: 1.35rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.project-lightbox-close:hover { background: #cde7ef; }
+.project-lightbox figure { margin: 0;padding: 16px; }
+.project-lightbox img {
+  display: block;
+  max-height: calc(100dvh - 215px);
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #f2f8fb;
+}
+.project-lightbox-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 0 20px 18px;
+  font-size: .9rem;
+  color: #577386;
+}
+.project-lightbox-foot a { color:#1b698a;font-weight:750; }
+body.theme-gamer .project-lightbox {
+  border-color: rgba(255,103,65,.55);
+  background: #180c13;
+  color:#fff0e6;
+}
+body.theme-gamer .project-lightbox-head { background: #180c13;border-bottom-color:#623044; }
+body.theme-gamer .project-lightbox-title { color:#ffdfc8; }
+body.theme-gamer .project-lightbox-close { border-color:#c9545a;background:#31131d;color:#fff1e3; }
+body.theme-gamer .project-lightbox-foot { color:#ffcfb5; }
+body.theme-gamer .project-lightbox-foot a { color:#ffaf66; }
+body.theme-gamer .project-lightbox img { background:#fff; }
+@media(max-width:610px) {
+  .project-image-btn { min-height: 44px;font-size:1rem; }
+  .project-lightbox figure { padding:8px; }
+  .project-lightbox-head { padding: 11px; }
+  .project-lightbox img { max-height:calc(100dvh - 168px); }
+}
+@media print {
+  .project-image-btn, .project-lightbox { display:none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-image-btn { transition:none !important; }
+}
