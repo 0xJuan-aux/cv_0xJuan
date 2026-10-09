@@ -57,6 +57,16 @@ async function loadCV() {
         <h3>${escapeHtml(project.title)}</h3>
         <p>${escapeHtml(project.description)}</p>
       `;
+      if (typeof project.image === 'string' && /^assets\/projects\/[a-z0-9-]+\.svg$/i.test(project.image)) {
+        const viewImage = document.createElement('a');
+        viewImage.className = 'project-image-btn';
+        viewImage.href = project.image;
+        viewImage.textContent = 'Ver imagen ↗';
+        viewImage.dataset.projectTitle = project.title;
+        viewImage.dataset.projectAlt = project.image_alt || project.title;
+        viewImage.setAttribute('aria-label', 'Ver imagen del proyecto ' + project.title);
+        card.appendChild(viewImage);
+      }
       projects.appendChild(card);
     });
 
