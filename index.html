@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/themes.css?v=20261008">
   <link rel="stylesheet" href="css/professional-effects.css?v=20261008-2">
+  <link rel="stylesheet" href="css/project-images.css?v=20261009-1">
 </head>
 <body>
   <div class="page-shell">
@@ -111,8 +112,22 @@
     </footer>
   </div>
 
+  <dialog id="project-lightbox" class="project-lightbox" aria-labelledby="project-lightbox-title">
+    <div class="project-lightbox-head">
+      <h2 id="project-lightbox-title" class="project-lightbox-title">Imagen del proyecto</h2>
+      <button id="project-lightbox-close" type="button" class="project-lightbox-close" aria-label="Cerrar imagen">×</button>
+    </div>
+    <figure>
+      <img id="project-lightbox-image" alt="" decoding="async">
+    </figure>
+    <div class="project-lightbox-foot">
+      <span>Ilustración conceptual del proyecto</span>
+      <a id="project-lightbox-link" href="#" target="_blank" rel="noopener noreferrer">Abrir imagen completa ↗</a>
+    </div>
+  </dialog>
   <script src="js/main.js"></script>
   <script src="js/theme.js?v=20261008"></script>
   <script src="js/professional-effects.js?v=20261008-2"></script>
+  <script src="js/project-images.js?v=20261009-1"></script>
 </body>
 </html>
